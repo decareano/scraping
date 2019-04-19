@@ -1,10 +1,16 @@
 #import libraries
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
 import urllib.request
 import csv
 
-# specify the url
 urlpage =  'http://www.fasttrack.co.uk/league-tables/tech-track-100/league-table/'
+
+#create a new firefox session
+driver = webdriver.Firefox()
+driver.implicitly_wait(30)
+driver.get(urlpage)
 
 # query the website and return the html to the variable 'page'
 page = urllib.request.urlopen(urlpage)
