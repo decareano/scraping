@@ -26,7 +26,7 @@ print('Number of results', len(results))
 #create headers
 rows = []
 rows.append(['Rank', 'Company Name', 'Webpage', 'Description', 'Location', 'Year end', 'Annual sales rise over 3 years', 'Sales $000s', 'Staff', 'Comments'])
-print(rows)
+#print(rows)
 
 #loop over results
 for result in results:
