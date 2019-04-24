@@ -44,8 +44,8 @@ for result in results:
     staff = data[6].getText()
     comments = data[7].getText()
 
-    print('Company is', company)
-    print('Sales', sales)
+    #print('Company is', company)
+    #print('Sales', sales)
 
     # extract description from the name
     companyname = data[1].find('span', attrs={'class':'company-name'}).getText()    
